@@ -13,7 +13,7 @@ import NextInput from 'next/input/Input.vue';
 import BaseSettingsHeader from '../components/BaseSettingsHeader.vue';
 import NextButton from 'dashboard/components-next/button/Button.vue';
 import AccountId from './components/AccountId.vue';
-import BuildInfo from './components/BuildInfo.vue';
+
 import AccountDelete from './components/AccountDelete.vue';
 import AutoResolve from './components/AutoResolve.vue';
 import AudioTranscription from './components/AudioTranscription.vue';
@@ -24,7 +24,7 @@ export default {
     BaseSettingsHeader,
     NextButton,
     AccountId,
-    BuildInfo,
+
     AccountDelete,
     AutoResolve,
     AudioTranscription,
@@ -248,6 +248,5 @@ export default {
     <div v-if="!uiFlags.isFetchingItem && isOnChatwootCloud">
       <AccountDelete />
     </div>
-    <BuildInfo />
   </div>
 </template>
